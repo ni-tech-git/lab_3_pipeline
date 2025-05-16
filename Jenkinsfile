@@ -6,24 +6,24 @@ pipeline {
                 sh "pwd"
                 }
         }
-        stage(‘touch’){
+        stage('touch'){
             steps {
-                sh “touch lab_3_pipeline.txt”
+                sh "touch lab_3_pipeline.txt"
             }
         }
-        stage(‘echo’){
+        stage('echo'){
             steps {
-                sh “echo "This is a text file for the lab 3 pipline" > lab_3_pipeline.txt”
+                sh "echo 'This is a text file for the lab 3 pipline' > lab_3_pipeline.txt"
             }
         }
-        stage(‘ls’){
+        stage('ls'){
             steps {
-                sh “ls -a”
+                sh "ls -a"
             }
         }
-        stage(‘mv’){
+        stage('mv'){
             steps {
-                sh “mv lab_3_pipeline.txt renamed_lab_3_pipeline.txt”
+                sh "mv lab_3_pipeline.txt renamed_lab_3_pipeline.txt"
             }
         }
     }
