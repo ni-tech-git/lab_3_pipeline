@@ -13,7 +13,7 @@ pipeline {
         }
         stage('echo'){
             steps {
-                sh "echo "This is a text file for the lab 3 pipline" > lab_3_pipeline.txt"
+                sh "echo 'This is a text file for the lab 3 pipline' > lab_3_pipeline.txt"
             }
         }
         stage('ls'){
